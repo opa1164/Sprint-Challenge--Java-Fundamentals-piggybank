@@ -8,13 +8,13 @@ public class Coin {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long coinid;
     private String name;
-    private String namepl;
+    private String nameplural;
     private double value;
     private int quantity;
 
-    public Coin(String name, String namepl, double value, int quantity) {
+    public Coin(String name, String nameplural, double value, int quantity) {
         this.name = name;
-        this.namepl = namepl;
+        this.nameplural = nameplural;
         this.value = value;
         this.quantity = quantity;
     }
@@ -39,11 +39,11 @@ public class Coin {
     }
 
     public String getNamepl() {
-        return namepl;
+        return nameplural;
     }
 
     public void setNamepl(String namepl) {
-        this.namepl = namepl;
+        this.nameplural = namepl;
     }
 
     public double getValue() {
