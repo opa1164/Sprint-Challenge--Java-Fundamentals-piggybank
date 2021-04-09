@@ -15,7 +15,7 @@ CREATE SEQUENCE IF NOT EXISTS hibernate_sequence;
 DELETE
 FROM coins;
 
-INSERT INTO coins (coinid, name, nameplural, value, quantity)
+INSERT INTO coins (coinid, name, namepl, value, quantity)
            VALUES (1, 'Quarter', 'Quarters', 0.25, 1),
                   (2, 'Dime', 'Dimes', 0.10, 1),
                   (3, 'Dollar', 'Dollars', 1.00, 5),
